@@ -117,13 +117,13 @@ BasicGame.Game.prototype = {
   },
   
   setupAudio: function () {
-  this.explosionSFX = this.add.audio('explosion');
-  this.playerExplosionSFX = this.add.audio('playerExplosion');
-  this.enemyFireSFX = this.add.audio('enemyFire');
-  this.playerFireSFX = this.add.audio('playerFire');
-  this.powerUpSFX = this.add.audio('powerUp');
-  this.music = this.add.audio('stageMusic', 0.5, true);
-  this.bossMusic = this.add.audio('bossMusic', 0.5, true);
+  this.explosionSFX = this.add.audio('explosion', 0.6, false);
+  this.playerExplosionSFX = this.add.audio('playerExplosion', 0.6, false);
+  this.enemyFireSFX = this.add.audio('enemyFire', 0.6, false);
+  this.playerFireSFX = this.add.audio('playerFire', 0.6, false);
+  this.powerUpSFX = this.add.audio('powerUp', 0.6, false);
+  this.music = this.add.audio('stageMusic', 0.4, true);
+  this.bossMusic = this.add.audio('bossMusic', 0.4, true);
   this.gameOverMusic = this.add.audio('gameOverMusic');
   this.music.play();
 },
